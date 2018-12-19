@@ -6,6 +6,9 @@ public class SumOfDigits {
 
     public static int sumOfDigits(int digits) {
         int sum = 0;
+        if (digits < 0){
+            digits *= -1;
+        }
         while (digits > 0) {
             sum += digits % 10;
             digits /= 10;
