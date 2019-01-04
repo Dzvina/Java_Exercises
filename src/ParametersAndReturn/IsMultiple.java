@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class IsMultiple {
 
-    public static boolean isMultiple(int a, int b){
-        if (a <=0 || b <=0){
+    public static boolean isMultiple(int a, int b) {
+        if (a <= 0 || b <= 0) {
             System.out.println("False value is negative");
-        }else if ( a % b == 0){
+        } else if (a % b == 0) {
             System.out.println("True");
             return true;
-        }else{
+        } else {
             return false;
         }
         return true;
