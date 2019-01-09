@@ -2,7 +2,7 @@ package Strings;
 
 public class PrintBackward {
 
-    public static void printBackward(String word){
+    public static void printBackward(String word) {
         StringBuffer buffer = new StringBuffer(word);
         buffer.reverse();
         System.out.println(buffer);

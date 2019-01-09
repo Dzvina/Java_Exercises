@@ -12,6 +12,6 @@ public class Repeat {
     }
 
     public static void main(String[] args) {
-        repeat("Ball",3);
+        repeat("Ball", 3);
     }
 }
