@@ -7,17 +7,22 @@ public class NameGame {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String firstName = scanner.nextLine();
-        String lastName = scanner.nextLine();
-        String newFirst = firstName.substring(1);
-        String newLast = lastName.substring(1);
+        System.out.print("What is your name? ");
+        String name = scanner.nextLine();
 
-        String question = "What is your name? ";
-        System.out.println(question + firstName + " " + lastName);
+        String[] names = name.split(" ");
 
-        playGame(firstName, newFirst);
+
+        String newFirst = names[0];
+        String newLast = names[1];
+
+        names[0] = newFirst.substring(1);
+        names[1] = newLast.substring(1);
+
+
+        playGame(newFirst, names[0]);
         System.out.println();
-        playGame(lastName, newLast);
+        playGame(newLast, names[1]);
 
     }
 
