@@ -10,7 +10,7 @@ public class ContainsTwice {
                 numberOfMatches++;
             }
         }
-        return numberOfMatches > 0;
+        return numberOfMatches > 1;
     }
 
     public static void main(String[] args) {
