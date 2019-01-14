@@ -4,12 +4,25 @@ public class ContainsTwice {
 
     public static boolean containsTwice(String string, char character) {
         int numberOfMatches = 0;
+        /*for (char i: string.toCharArray() ){
+            if (i == character) {
+                numberOfMatches++;
+            }
+        }*/
+
+        /*for (int i = 0; i < string.length(); i++) {
+            if (string.toCharArray() [i] == character) {
+                numberOfMatches++;
+            }
+        }*/
+
         char[] mas = string.toCharArray();
         for (int i = 0; i < mas.length; i++) {
             if (mas[i] == character) {
                 numberOfMatches++;
             }
         }
+
         return numberOfMatches > 1;
     }
 
@@ -20,6 +33,6 @@ public class ContainsTwice {
         System.out.print("Write character ");
         char ch = scanner.next().charAt(0);
 
-        containsTwice(word, ch);
+        System.out.println(containsTwice(word, ch));
     }
 }
