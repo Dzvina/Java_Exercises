@@ -40,7 +40,7 @@ public class AddCommas {
        /* System.out.println("Hello World!");
 
         //вхідне число
-        String test = "1234567890";
+        String ReverseChunks = "1234567890";
 
         //результат записуємо сюди
         String result = "";
@@ -52,14 +52,14 @@ public class AddCommas {
         int position = 0;
 
         //проходимося по масиву з заду на перед з кроком в три елементи
-        for (int i = test.length() - 1; i >= 0; i = i - 3) {
+        for (int i = ReverseChunks.length() - 1; i >= 0; i = i - 3) {
             //цикл для проходу по кожному з трьох елементів з попереднього циклу
             for (j = 0; j <= 2; j++) {
                 //дістаємо позицію елемента (наприклад ми з самого початку витягнули три останніх символи тобто символи з комірок  9,8,7)
                 position = i - j;
                 //перевіряємо чи не вилізли за розміри нашого рядка
                 if (position >= 0) {
-                    result = test.charAt(i - j) + result;
+                    result = ReverseChunks.charAt(i - j) + result;
                 } else {
                     //якшо вилізли то виходимо з внутрішнього циклу
                     break;
